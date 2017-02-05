@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+
+	display: block;
+	width: 100%;
+
+	box-shadow: 0 2px 5px rgba(11, 12, 12, 0.12);
+	background: #ffffff;
+	clear: both;
+}
+
+.header__title {
+	float: left;
+	display: block;
+
+	padding: 0 16px;
+	margin: 0;
+
+	color: #666666;
+	font-size: 24px;
+	line-height: 56px;
+}
+
+.header__menus {
+	float: right;
+	display: block;
+	margin: 0;
+	list-style: none;
+}
+
+.header__menus > li {
+	float: left;
+	display: block;
+}
+
+.header__menus > li > a:hover {	
+	background: #efefef;
+}
+
+.header__menus > li > a {
+	cursor: pointer;
+	display: block;
+	padding: 0 16px;
+
+	color: #444444;
+	font-size: 16px;
+	line-height: 56px;
+}
+
+.content {
+	position: relative;
+	z-index: 1;
+}

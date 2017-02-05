@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>연주는 바부바부양!</title>
+	<style>
+		#aa {
+			color: #dd8888;			
+		}
+
+		.label {
+			background: #ff0000;
+		}
+
+		#sum {
+			cursor: pointer;
+			display: inline-block;
+			padding: 4px 8px;
+			background: #efefef;
+			border-radius: 2px;
+			border: 1px solid #afafaf;
+			box-shadow: 0 2px 5px rgba(11, 12, 12, 0.12)
+		}
+
+		#sum:hover {
+			background: #afafaf;
+		}
+
+		h1 {
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Title</h1>
+	<h2>Title</h2>
+	<h3>Title</h3>
+	<h4>Title</h4>
+	<h5>Title</h5>
+	<h6>Title</h6>
+
+	<a id="aa" href="http://naver.com" target="_blank">메렁메렁</a><br/>
+	<span class="label">fool fool!</span>
+	<span class="label">wefwefwef</span>
+
+	<input type="text" id="first" /> + 
+	<input type="text" id="second" />
+	<a role="button" id="sum">안더하고 뭐하냥!</a>
+
+	<script>
+		var first = document.getElementById("first");
+		var second = document.getElementById("second");
+		var sum = document.getElementById("sum");
+
+		sum.onclick = function() {
+			sum.innerHTML = parseInt(first.value) + parseInt(second.value);
+		}
+
+		// 숫자 = Integer / Float / Long / Double
+		
+	</script>
+</body>
+</html>
